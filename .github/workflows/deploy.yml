@@ -63,7 +63,7 @@ jobs:
           tags: |
             ghcr.io/${{ env.OWNER_LC }}/blog:${{ needs.makeTagAndRelease.outputs.tag_name }},
             ghcr.io/${{ env.OWNER_LC }}/blog:latest
-    deploy:
+  deploy:
       runs-on: ubuntu-latest
       needs: [ buildImageAndPush ]
       steps:
