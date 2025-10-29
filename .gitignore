@@ -36,4 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
+#시크릿 application-secrets
+*.env
+.env.local
+.env.*.local
 application-secret.yml
